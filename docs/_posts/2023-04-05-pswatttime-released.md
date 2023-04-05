@@ -3,7 +3,14 @@ layout: post
 title: "PSWattTime Released"
 date: April 5, 2023
 author: "Roderick Bant"
-tags: ["carbon-emissions","powershell-module","powershell","azure"]
+tags:
+  - carbon-emissions
+  - powershell-module
+  - powershell
+  - azure
+categories:
+  - Green Cloud
+  - PowerShell
 excerpt_separator: <!--more-->
 ---
 
