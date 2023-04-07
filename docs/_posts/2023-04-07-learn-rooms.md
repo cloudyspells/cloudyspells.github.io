@@ -15,7 +15,7 @@ excerpt_separator: <!--more-->
 
 Microsoft Learn Rooms has been announced this week and it seems to be a very
 exciting new blended learning experience for anyone looking to develop cloud
-skills in supportive environment with peers and experts.
+skills in a supportive environment with peers and experts.
 
 Rooms not only consist of training, but also discussions and office hours
 sessions to ask questions to experts, Microsoft Certified Trainers and MVP's
