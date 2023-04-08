@@ -86,7 +86,8 @@ jobs:
         uses: azure/CLI@v1
         with:
           inlineScript: |
-            az storage blob upload-batch -d '$web' -s _site --account-name cloudyghiotest
+            ls -l
+            az storage blob upload-batch -d '$web' -s . --account-name cloudyghiotest
             echo "Published to: https://cloudyghiotest.z6.web.core.windows.net/"
 
   # deploy to GitHub Pages production
