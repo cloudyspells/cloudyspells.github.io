@@ -60,13 +60,46 @@ jobs:
         uses: actions/upload-pages-artifact@v1
         with:
           path: "docs/_site${{ steps.pages.outputs.base_path }}"
+  
+  # Deploy to Azure Blob Static Website
+  deploy-test:
+    environment: 
+      name: cloudyspells-test-azure
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to Azure Blob Static Website
+        id: download-artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: github-pages
+      
+      - name: Extract artifact
+        run: tar -xvf artifact.tar
 
-  deploy:
+      - name: Login to Azure
+        uses: azure/login@v1
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+      
+      - name: Deploy to Azure Blob Static Website
+        uses: azure/CLI@v1
+        with:
+          inlineScript: |
+            ls -l
+            az storage blob upload-batch -d '$web' -s . --account-name cloudyghiotest
+            echo "Published to: https://cloudyghiotest.z6.web.core.windows.net/"
+
+  # deploy to GitHub Pages production
+  deploy-prod:
+    if: github.ref == 'refs/heads/gh-pages'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
-    needs: build
+    needs:
+      - build
+      - deploy-test
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
