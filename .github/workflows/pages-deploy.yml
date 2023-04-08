@@ -92,6 +92,7 @@ jobs:
 
   # deploy to GitHub Pages production
   deploy-prod:
+    if: github.ref == 'refs/heads/gh-pages'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
