@@ -87,7 +87,7 @@ jobs:
         with:
           inlineScript: |
             ls -l
-            az storage blob upload-batch -d '$web' -s . --account-name cloudyghiotest
+            az storage blob upload-batch -d '$web' -s . --account-name cloudyghiotest --overwrite
             echo "Published to: https://cloudyghiotest.z6.web.core.windows.net/"
 
   # deploy to GitHub Pages production
