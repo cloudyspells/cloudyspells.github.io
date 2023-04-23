@@ -10,7 +10,6 @@ tags:
   - azure
 categories:
   - Green Cloud
-  - PowerShell
 excerpt_separator: <!--more-->
 ---
 
