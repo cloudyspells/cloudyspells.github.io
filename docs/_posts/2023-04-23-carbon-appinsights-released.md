@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Carbon AppInsights released - A new way to trigger actions based on emissions data"
-date: April 7, 2023
+date: April 23, 2023
 author: "Roderick Bant"
 tags:
   - azure
