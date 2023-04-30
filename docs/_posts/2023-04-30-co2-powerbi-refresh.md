@@ -21,7 +21,7 @@ Insights instance. Today I released a first sample that demonstrates how you
 can use the Azure Monitor data to trigger a Power BI dataset refresh when
 carbon emissions are low in your region.
 
-![Power BI dataset refresh](../assets/images/la-lowco2-refresh-pbi.png)
+![Power BI dataset refresh](/assets/images/la-lowco2-refresh-pbi.png)
 
 <!--more-->
 
