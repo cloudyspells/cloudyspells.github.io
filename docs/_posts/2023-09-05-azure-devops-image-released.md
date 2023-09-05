@@ -18,5 +18,8 @@ usability is limited because the Microsoft Hosted agents cannot be connected to
 a private network. License limitations prevent Microsoft from distributing the
 image used in their hosted pools. To speed up development and remove toil, a
 pre-built version of the Microsoft Hosted image containing only the included
-Open Source tools is now available in the Azure Marketplace. The source code for
-the project is also available on GitHub with instructions on how to get started.
+Open Source tools is now available in the
+[Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/rtbusinessvalidation1685730553911.ado-agent-ms-stack-ubuntu2204?tab=Overview). The source code for
+the project is also available on
+[GitHub](https://github.com/cloudyspells/ado-agent-ms-stack) with instructions
+how to get started.
